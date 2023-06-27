@@ -1,0 +1,88 @@
+#Two ways to store -
+----------------------
+1. list
+2. matrix way = adj matrix:-
+purpose: to record the results so the future adj can perform
+the given operation:
+make an adj matrix of n+1, n+1 size, having index: 0,1, 2....n-1
+
+-> if there is an edge b/w 2 nodes -> mark it as arr 1 otherwise 0
+
+-> space comp: N*N(costly) -> lot of unused spaces are there
+
+
+Code: to store adj in an matrix
+
+int main(){
+	int n, m;
+	cin >> n >> m;
+	//graph here
+	int adj[n+1][m+1];
+	for(int i = 0; i<m; i++){
+		int u, v;
+		cin >> u >> v;
+		adj[u][v] = 1;
+		adj[v][u] = 1;
+	}
+	return 0;
+}
+
+Adj List
+-----------------
+Empty lists for the no. of nodes
+we will record all the connected neighbours for all the nodes
+in their respective list
+
+eg: 
+
+0 -> 
+1 -> 3, 2
+2 -> 1, 4, 5
+3 
+4
+
+
+Space -> 2*Edges -> O(2*E) -> every edges has two nodes (Undirected)
+
+Space -> O(E) -> only one vertex is stored (Directed Graph)
+
+
+Code: to store adj in a list
+
+int main(){
+	int n, m;
+	cin>>n>>m;
+	vector<int> adj[n+1];	//need lists eq to no. of vert
+	for(int  = 0; i<m; i++){
+		int u, v;
+		cin>>u>>v;
+		adj[u].push_back(v);
+		adj[v].push_back(u);
+	}
+	return 0;
+}
+
+//Directed Graph : u---> v, SC: O(E)
+int main(){
+	int n, m;
+	cin>>n>>m;
+	vector<int> adj[n+1];	//need lists eq to no. of vert
+	for(int  = 0; i<m; i++){
+		int u, v;
+		cin>>u>>v;
+		adj[u].push_back(v);	//only storing one vert for a directed graph
+		
+	}
+	return 0;
+}
+
+
+Weighted Graph:
+---------------
+
+We will use a List with the combination of Pair to store the neighboring vertex along with the edge weight
+eg:
+
+neighbour of 0 index -> (1, 3), (2, 4) // 2 vertices-> 1 & 2 of weight 3 and 4 resp.
+
+
