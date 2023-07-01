@@ -4,3 +4,16 @@ The concept of connected components is introduced to address this. A graph with 
 They explain that in algorithms such as traversal algorithms, it is important to use a visited array to ensure that all connected portions of the graph are explored. 
 The traversal algorithm is explained using the example graph, where each component is visited in a sequential manner. 
 The speaker highlights the importance of running the traversal algorithm from each unvisited node to cover all components.
+
+graphs can be connected through different componets:
+how to visit -> using traversal algorithm and a visited array
+
+for(int i = 1; i<graph.length; i++){
+	if(!visit[i]){
+		traversal(i);
+	}
+}
+
+visit[] array is initially filled with 0.
+->As the traversal of nodes continues it will be filled it 1(to mark it as visited)
+
