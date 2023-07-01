@@ -1,0 +1,6 @@
+What it means for a graph to be connected. 
+It including binary trees, and emphasize that even disconnected portions can be considered as separate graphs. 
+The concept of connected components is introduced to address this. A graph with ten nodes and eight edges, which is divided into four components. 
+They explain that in algorithms such as traversal algorithms, it is important to use a visited array to ensure that all connected portions of the graph are explored. 
+The traversal algorithm is explained using the example graph, where each component is visited in a sequential manner. 
+The speaker highlights the importance of running the traversal algorithm from each unvisited node to cover all components.
