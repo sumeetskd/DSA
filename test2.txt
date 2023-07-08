@@ -1,0 +1,51 @@
+$ git push -u origin feature/lesson
+
+
+sumee@Sumeet MINGW64 ~/Downloads/GIT/DSA (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+sumee@Sumeet MINGW64 ~/Downloads/GIT/DSA (main)
+$ git checkout -B feature/lesson
+Switched to a new branch 'feature/lesson'
+
+sumee@Sumeet MINGW64 ~/Downloads/GIT/DSA (feature/lesson)
+$ touch test2.txt
+
+sumee@Sumeet MINGW64 ~/Downloads/GIT/DSA (feature/lesson)
+$ ls
+README.md  test2.txt
+
+sumee@Sumeet MINGW64 ~/Downloads/GIT/DSA (feature/lesson)
+$ git add test2.txt
+
+sumee@Sumeet MINGW64 ~/Downloads/GIT/DSA (feature/lesson)
+$ git commit -m "Add test2.txt to the branch"
+[feature/lesson ce0e907] Add test2.txt to the branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.txt
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+sumee@Sumeet MINGW64 ~/Downloads/GIT/DSA (feature/lesson)
+$ git push -u origin feature/lesson
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature/lesson' on GitHub by visiting
+remote:      https://github.com/sumeetskd/DSA/pull/new/feature/lesson
+remote:
+To https://github.com/sumeetskd/DSA.git
+ * [new branch]      feature/lesson -> feature/lesson
+branch 'feature/lesson' set up to track 'origin/feature/lesson'.
+
+
