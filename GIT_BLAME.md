@@ -12,4 +12,3 @@
 - Additional flags and options can be used with "git blame" to customize the output format, such as displaying full commit IDs or changing the date format.
 - To see the detailed changes for a specific commit, the commit ID from "git blame" can be used with the "git log -p" command.
 - Using "git blame" and "git log -p" together provides a way to track changes, identify authors, and examine detailed commit changes.
-- These points explain the purpose and usage of the "git blame" command, demonstrating how it helps track changes and identify authors in Git repositories.
